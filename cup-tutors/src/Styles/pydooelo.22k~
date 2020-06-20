@@ -96,13 +96,13 @@ textarea, input {
     .wrapper {
         left: 45%;
     }
-    .cardGroup {
-        height: 80vh;
+    .card-group {
+        height: 70vh;
     }
 }
 
 /* Medium devices (tablets, 768px and up)*/
-@media (min-width: 667px) {
+@media (min-width: 800px) {
     .overlay {
         padding-top: 3vw;
         padding-bottom: 3vw;
@@ -120,7 +120,7 @@ textarea, input {
     .wrapper {
         left: 43.5%;
     }
-    .cardGroup {
+    .card-group {
         height: auto !important;
     }
 }
@@ -144,7 +144,7 @@ textarea, input {
     .wrapper {
         left: 47%;
     }
-    .cardGroup {
+    .card-group {
         height: auto !important;
     }
 }
@@ -168,7 +168,7 @@ textarea, input {
     .wrapper {
         left: 48.5%;
     }
-    .cardGroup {
+    .card-group {
         height: auto !important;
     }
 }
@@ -206,7 +206,6 @@ textarea, input {
     margin: 0 -500%;
     padding: 0 500%;
     width: 100%;
-    margin-top: -1px;
 }
 
 .bottom2 {
@@ -341,9 +340,8 @@ textarea, input {
     outline: none;
 }
 
-.cardGroup {
-    padding-top: 1em;
-    padding-bottom: 1em;
+.card-group {
+    border: 1em solid lightsteelblue;
     overflow: auto;
-    height: 90vh;
+    height: 70vh;
 }
