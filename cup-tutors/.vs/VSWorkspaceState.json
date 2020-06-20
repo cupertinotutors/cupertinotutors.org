@@ -3,12 +3,11 @@
     "",
     "\\src",
     "\\src\\Components",
-    "\\src\\images",
+    "\\src\\img",
     "\\src\\pages",
-    "\\src\\pages\\img",
     "\\src\\Styles",
     "\\static"
   ],
-  "SelectedNode": "\\src\\pages\\meet-the-tutors.js",
+  "SelectedNode": "\\src\\img",
   "PreviewInSolutionExplorer": false
 }

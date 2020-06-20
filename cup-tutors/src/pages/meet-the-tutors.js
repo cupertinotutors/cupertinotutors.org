@@ -8,8 +8,7 @@ import { Image } from "react-bootstrap";
 import { Nav } from "react-bootstrap";
 import { Navbar } from "react-bootstrap";
 import { Collapse } from "react-bootstrap";
-import { Row, Col, Button, Card, CardColumns, Carousel } from "react-bootstrap";
-
+import { Row, Col, Button, Card, CardColumns } from "react-bootstrap";
 
 export default function Home() {
     function sendmail() {
@@ -33,6 +32,7 @@ export default function Home() {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
                         <Nav.Link href="/">Home</Nav.Link>
+                        <Nav.Link href="/tutoring-services">Tutoring Services</Nav.Link>
                     </Nav>
                     <Nav>
                         <Nav.Link href="#tohere">Contact Us</Nav.Link>
@@ -40,6 +40,7 @@ export default function Home() {
                 </Navbar.Collapse>
             </Navbar>
 
+            <div className="main"></div>
             <Row>
                 <Col xs={{ span: 12 }} sm={{ span: 12 }} md={{ span: 8, offset: 2 }} lg={{ span: 8, offset: 2 }} xl={{ span: 8, offset: 2 }}>
                     <div className="overlay">
@@ -50,26 +51,18 @@ export default function Home() {
                     </div>
                 </Col>
             </Row>
-            <div style={{ marginTop: `30vh` }}></div>
+            <div style={{ marginTop: `20vh` }}></div>
 
-            <Row className="backgroundG">
-                <Col xs={12} sm={12} md={12} lg={6} xl={6} style={{ padding: 0 }}>
-                    <div className="imgdiv">
-                        <Image src="https://images.unsplash.com/photo-1560785496-3c9d27877182?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1867&q=80" style={{ padding: `3vw` }} alt="" roundedCircle fluid />
-                    </div>
-                </Col>
-                <Col className="d-flex align-items-center justify-content-center" xs={12} sm={12} md={12} lg={6} xl={6} style={{ padding: 0 }}>
-                    <div className="nexttoright">
-                        <h3 style={{ textAlign: `center`, fontWeight: `bold` }}>Tutoring Services</h3>
-                        <p style={{ textAlign: `left` }}>Cupertino Tutors offer Title 1 students tutoring, free of charge.
-                        For other students, prices depend on each tutor and their respective subjects. To request for a tutor, 
-                          please fill out the form <a href="https://forms.gle/w7Jx8YZobRp7u6yu7" rel="noopener noreferrer" target="_blank">here</a>.</p>
-                    </div>
-                </Col>
-            </Row>
+            {/*<Row className="backgroundG2">
+                <Col></Col>
+                <Col></Col>
+                <Col></Col>
+            </Row>*/}
+
+
             <CardColumns className="backgroundL3" style={{ border: `1em solid lightsteelblue` }}>
                 <Card>
-                    <Card.Img variant="top" src="https://cdn.pixabay.com/photo/2017/02/23/13/05/profile-2092113_960_720.png" alt="" />
+                    <Card.Img variant="top" src="https://cdn.pixabay.com/photo/2017/02/23/13/05/profile-2092113_960_720.png" />
                     <Card.Body>
                         <Card.Title>First and Last Name</Card.Title>
                         <Card.Text>
@@ -79,13 +72,13 @@ export default function Home() {
                     <blockquote className="blockquote mb-0 card-body">
                         <footer className="blockquote-footer">
                             <small className="text-muted">
-                                Subjects: Science and Math, $14.99/hour
+                                Subjects: Science and Math
                             </small>
                         </footer>
                     </blockquote>
                 </Card>
                 <Card>
-                    <Card.Img variant="top" src="https://cdn.pixabay.com/photo/2017/02/23/13/05/profile-2092113_960_720.png" alt="" />
+                    <Card.Img variant="top" src="https://cdn.pixabay.com/photo/2017/02/23/13/05/profile-2092113_960_720.png" />
                     <Card.Body>
                         <Card.Title>First and Last Name</Card.Title>
                         <Card.Text>
@@ -95,13 +88,13 @@ export default function Home() {
                     <blockquote className="blockquote mb-0 card-body">
                         <footer className="blockquote-footer">
                             <small className="text-muted">
-                                Subjects: Science and Math, $14.99/hour
+                                Subjects: Science and Math
                             </small>
                         </footer>
                     </blockquote>
                 </Card>
                 <Card>
-                    <Card.Img variant="top" src="https://cdn.pixabay.com/photo/2017/02/23/13/05/profile-2092113_960_720.png" alt="" />
+                    <Card.Img variant="top" src="https://cdn.pixabay.com/photo/2017/02/23/13/05/profile-2092113_960_720.png" />
                     <Card.Body>
                         <Card.Title>First and Last Name</Card.Title>
                         <Card.Text>
@@ -111,13 +104,13 @@ export default function Home() {
                     <blockquote className="blockquote mb-0 card-body">
                         <footer className="blockquote-footer">
                             <small className="text-muted">
-                                Subjects: Science and Math, $14.99/hour
+                                Subjects: Science and Math
                             </small>
                         </footer>
                     </blockquote>
                 </Card>
                 <Card>
-                    <Card.Img variant="top" src="https://cdn.pixabay.com/photo/2017/02/23/13/05/profile-2092113_960_720.png" alt="" />
+                    <Card.Img variant="top" src="https://cdn.pixabay.com/photo/2017/02/23/13/05/profile-2092113_960_720.png" />
                     <Card.Body>
                         <Card.Title>First and Last Name</Card.Title>
                         <Card.Text>
@@ -127,13 +120,13 @@ export default function Home() {
                     <blockquote className="blockquote mb-0 card-body">
                         <footer className="blockquote-footer">
                             <small className="text-muted">
-                                Subjects: Science and Math, $14.99/hour
+                                Subjects: Science and Math
                             </small>
                         </footer>
                     </blockquote>
                 </Card>
                 <Card>
-                    <Card.Img variant="top" src="https://cdn.pixabay.com/photo/2017/02/23/13/05/profile-2092113_960_720.png" alt="" />
+                    <Card.Img variant="top" src="https://cdn.pixabay.com/photo/2017/02/23/13/05/profile-2092113_960_720.png" />
                     <Card.Body>
                         <Card.Title>First and Last Name</Card.Title>
                         <Card.Text>
@@ -143,13 +136,13 @@ export default function Home() {
                     <blockquote className="blockquote mb-0 card-body">
                         <footer className="blockquote-footer">
                             <small className="text-muted">
-                                Subjects: Science and Math, $14.99/hour
+                                Subjects: Science and Math
                             </small>
                         </footer>
                     </blockquote>
                 </Card>
                 <Card>
-                    <Card.Img variant="top" src="https://cdn.pixabay.com/photo/2017/02/23/13/05/profile-2092113_960_720.png" alt="" />
+                    <Card.Img variant="top" src="https://cdn.pixabay.com/photo/2017/02/23/13/05/profile-2092113_960_720.png" />
                     <Card.Body>
                         <Card.Title>First and Last Name</Card.Title>
                         <Card.Text>
@@ -159,7 +152,7 @@ export default function Home() {
                     <blockquote className="blockquote mb-0 card-body">
                         <footer className="blockquote-footer">
                             <small className="text-muted">
-                                Subjects: Science and Math, $14.99/hour
+                                Subjects: Science and Math
                             </small>
                         </footer>
                     </blockquote>
@@ -168,7 +161,8 @@ export default function Home() {
 
 
 
-            <form className="bottom" id="tohere" autoComplete="off">
+
+            <form className="bottom" id="tohere" autocomplete="off">
                 <div style={{ paddingTop: `1em`, paddingBottom: `1em` }}>
                     <div className="wrapper">
                         <div className="title">
@@ -176,8 +170,8 @@ export default function Home() {
                         </div>
                         <div className="contact-form">
                             <div className="input-fields">
-                                <input type="text" className="input" placeholder="Name" />
-                                <input type="text" className="input" placeholder="Email Address" />
+                                <input type="text" class="input" placeholder="Name" />
+                                <input type="text" class="input" placeholder="Email Address" />
                                 <input type="text" id="formSubject" className="input" placeholder="Subject" />
                             </div>
                             <div className="msg">

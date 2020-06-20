@@ -31,6 +31,7 @@ export default function Home() {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
+                        <Nav.Link href="/tutoring-services">Tutoring Services</Nav.Link>
                         <Nav.Link href="/meet-the-tutors">Meet the Tutors</Nav.Link>
                     </Nav>
                     <Nav>
@@ -39,6 +40,7 @@ export default function Home() {
                 </Navbar.Collapse>
             </Navbar>
 
+            <div className="main"></div>
             <Row>
                 <Col xs={{ span: 12 }} sm={{ span: 12 }} md={{ span: 8, offset: 2 }} lg={{ span: 8, offset: 2 }} xl={{ span: 8, offset: 2}}>
                     <div className="overlay">
@@ -49,18 +51,18 @@ export default function Home() {
                     </div>
                 </Col>
             </Row>
-            <div style={{ marginTop: `30vh` }}></div>
+            <div style={{ marginTop: `20vh` }}></div>
 
             <Row className="backgroundG">
                 <Col xs={12} sm={12} md={12} lg={6} xl={6} style={{ padding: 0 }}>
                     <div className="imgdiv">
-                        <Image src="https://www.ceefcares.org/wp-content/uploads/2019/03/group-of-kids.jpg" style={{ padding: `3vw` }} alt="" roundedCircle fluid />
+                        <Image src="https://www.ceefcares.org/wp-content/uploads/2019/03/group-of-kids.jpg" style={{ padding: `3vw` }} roundedCircle fluid />
                     </div>
                 </Col>
                 <Col className="d-flex align-items-center justify-content-center" xs={12} sm={12} md={12} lg={6} xl={6}style={{ padding: 0 }}>
                     <div className="nexttoright">
                         <h3 style={{ textAlign: `center`, fontWeight: `bold` }}>About Us</h3>
-                        <p style={{ textAlign: `left` }}>Cupertino Tutors is comprised of a group of Bay Area high 
+                        <p style={{ textAlign: `center` }}>Cupertino Tutors is comprised of a group of Bay Area high 
                             school students who are eager to help mentor younger students. 
                             Each student has their own specialties of subjects to teach. 
                             Students are also part of the Cupertino Educational Endowment 
@@ -75,10 +77,11 @@ export default function Home() {
                 <Col className="d-flex align-items-center justify-content-center" xs={{ span: 12, order: `last` }} sm={{ span: 12, order: `last` }} md={{ span: 12, order: `last` }} lg={{ span: 6, order: `first` }} xl={{ span: 6, order: `first` }} style={{ padding: 0 }}>
                     <div className="nexttoright">
                         <h3 style={{ textAlign: `center`, fontWeight: `bold` }}>Our Services</h3>
-                        <p style={{ textAlign: `left`, marginLeft: `2vw` }}>Cupertino Tutors offers a variety of subjects to tutor,
+                        <p style={{ textAlign: `center` }}>Cupertino Tutors offers a variety of subjects to tutor,
                             each student specializing in their own strong suits. We also offer
                             Title 1 students tutoring at no cost. You can view our full range
                             of tutoring services, as well as all our tutors below.</p>
+                    <Button className="btn" href="/tutoring-services" variant="dark" style={{ color: `white` }}>Tutoring Services</Button>{' '}
                     <Button className="btn" href="/meet-the-tutors" variant="dark" style={{ color: `white` }}>Meet the Tutors</Button>{' '}
                     </div>
                 </Col>
@@ -88,7 +91,7 @@ export default function Home() {
             </Row>
 
             <div className="backgroundL2" style={{ height: `1em` }}></div>
-            <form className="bottom" id="tohere" autoComplete="off">
+            <form className="bottom" id="tohere" autocomplete="off">
                 <div style={{ paddingTop: `1em`, paddingBottom: `1em` }}>
                     <div className="wrapper">
                         <div className="title">
@@ -96,8 +99,8 @@ export default function Home() {
                         </div>
                         <div className="contact-form">
                             <div className="input-fields">
-                                <input type="text" className="input" placeholder="Name" />
-                                    <input type="text" className="input" placeholder="Email Address" />
+                                <input type="text" class="input" placeholder="Name" />
+                                    <input type="text" class="input" placeholder="Email Address" />
                                             <input type="text" id="formSubject" className="input" placeholder="Subject" />
                             </div>
                                             <div className="msg">

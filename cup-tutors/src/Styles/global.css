@@ -14,7 +14,7 @@ html {
 }
 
 #home-page {
-    background-image: url("../pages/img/homebackground.jpg");
+    background: url("https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
     height: auto;
     background-size: cover;
     background-position: center;
@@ -22,7 +22,15 @@ html {
 }
 
 #meet-tutors-page {
-    background-image: url("../pages/img/meetbackground.jpg");
+    background: url("https://images.unsplash.com/photo-1443188631128-a1b6b1c5c207?ixlib=rb-1.2.1&auto=format&fit=crop&w=2689&q=80");
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#services-page {
+    background: url("https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
     height: auto;
     background-size: cover;
     background-position: center;
@@ -42,6 +50,11 @@ textarea, input {
     text-align: left;
 }
 
+.main {
+    width: 100%;
+    height: 60vh;
+}
+
 .overlay {
     background: rgba(248,248,255,0.5);
     text-align: center;
@@ -51,7 +64,6 @@ textarea, input {
     color: black;
     padding-top: 5vw;
     padding-bottom: 5vw;
-    margin-top: 30vh;
 }
 #p1 {
     font-size: 12vw;
@@ -274,10 +286,8 @@ textarea, input {
 
 .bottom .input-fields,
 .bottom .msg {
-    width: 100%;
+    width: 48%;
 }
-
-
 
     .bottom .input-fields .input,
     .bottom .msg textarea {
@@ -338,3 +348,127 @@ textarea, input {
 }
 
 
+
+.backgroundL3 .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 100px;
+}
+
+
+.backgroundL3 .contact-box {
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.4);
+    z-index: 1;
+}
+
+.backgroundL3 .left {
+    background: url("https://images.unsplash.com/photo-1519791883288-dc8bd696e667?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80") no-repeat center;
+    background-size: cover;
+    height: 100%;
+}
+
+.backgroundL3 .right {
+    padding: 25px 40px;
+}
+
+.backgroundL3 h2 {
+    position: relative;
+    padding: 0 0 10px;
+    margin-bottom: 10px;
+}
+
+    .backgroundL3 h2:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        height: 4px;
+        width: 50px;
+        border-radius: 2px;
+        background-color: #2ecc71;
+    }
+
+.backgroundL3 .field {
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0);
+    outline: none;
+    background-color: rgba(230, 230, 230, 0.6);
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+}
+
+    .backgroundL3 .field:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+.backgroundL3 textarea {
+    min-height: 150px;
+}
+
+.backgroundL3 .btn {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: #2ecc71;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+    .backgroundL3 .btn:hover {
+        background-color: #27ae60;
+    }
+
+.backgroundL3 .field:focus {
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+
+@media screen and (max-width: 880px) {
+    .backgroundL3 .contact-box {
+        grid-template-columns: 1fr;
+    }
+
+    .backgroundL3 .left {
+        height: 200px;
+    }
+}
+
+
+.checkboxes {
+    text-align: left;
+}
+
+    .checkboxes input {
+        margin: 0px 0px 0px 0px;
+    }
+
+#thislabel {
+    margin-left: 1rem;
+}
+
+#thischeckbox {
+    width: 100%;
+    text-align: left;
+    float: left;
+}
+
+.bottom input:focus, .bottom textarea:focus {
+    outline: none;
+}
