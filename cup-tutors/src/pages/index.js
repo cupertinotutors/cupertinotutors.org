@@ -17,7 +17,7 @@ export default function Home() {
         var input2 = document.getElementById('formMessage');
         var inputmessage = input2.value;
 
-        window.location.href = "mailto:jjasonsshan@gmail.com" + "?subject=" + inputsubject + "&body=" + inputmessage;
+        window.location.href = "mailto:jason@cupertinotutors.org" + "?subject=" + inputsubject + "&body=" + inputmessage + '%0D%0A' + '%20';
     }
 
     return (
@@ -54,7 +54,7 @@ export default function Home() {
             <Row className="backgroundG">
                 <Col xs={12} sm={12} md={12} lg={6} xl={6} style={{ padding: 0 }}>
                     <div className="imgdiv">
-                        <Image src="https://www.ceefcares.org/wp-content/uploads/2019/03/group-of-kids.jpg" style={{ padding: `3vw` }} roundedCircle fluid />
+                        <Image src="https://cdn.pixabay.com/photo/2015/12/15/06/42/kids-1093758_1280.jpg" style={{ padding: `3vw` }} roundedCircle fluid />
                     </div>
                 </Col>
                 <Col className="d-flex align-items-center justify-content-center" xs={12} sm={12} md={12} lg={6} xl={6}style={{ padding: 0 }}>
@@ -87,27 +87,31 @@ export default function Home() {
                 </Col>
             </Row>
 
-            <div className="backgroundL2" style={{ height: `1em` }}></div>
-            <form className="bottom" id="tohere" autoComplete="off">
-                <div style={{ paddingTop: `1em`, paddingBottom: `1em` }}>
-                    <div className="wrapper">
-                        <div className="title">
-                            <h1>Contact Us</h1>
-                        </div>
-                        <div className="contact-form">
-                            <div className="input-fields">
-                                <input type="text" className="input" placeholder="Name" />
-                                    <input type="text" className="input" placeholder="Email Address" />
-                                            <input type="text" id="formSubject" className="input" placeholder="Subject" />
+            <Row className="backgroundL2" style={{ height: `1em` }}></Row>
+            <Row className="bottom" id="tohere" >
+                <Col className="d-flex align-items-center justify-content-center">
+                    <form autoComplete="off">
+                        <div style={{ paddingTop: `1em`, paddingBottom: `1em` }}>
+                            <div className="wrapper">
+                                <div className="title">
+                                    <h1>Contact Us</h1>
+                                </div>
+                                <div className="contact-form">
+                                    <div className="input-fields">
+                                        <input type="text" className="input" placeholder="Name" />
+                                            <input type="text" className="input" placeholder="Email Address" />
+                                                    <input type="text" id="formSubject" className="input" placeholder="Subject" />
+                                    </div>
+                                                    <div className="msg">
+                                                        <textarea id="formMessage" placeholder="Message"></textarea>
+                                                    <div onClick={sendmail} className="btn">send</div>
+                                                    </div>
+                                </div>
                             </div>
-                                            <div className="msg">
-                                                <textarea id="formMessage" placeholder="Message"></textarea>
-                                            <div onClick={sendmail} className="btn">send</div>
-                                            </div>
                         </div>
-                    </div>
-                </div>
-            </form>
+                    </form>
+                </Col>
+            </Row>
         </Container>
     )
 }

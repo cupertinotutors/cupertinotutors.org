@@ -72,12 +72,6 @@ textarea, input {
     padding-left: 2vw;
 }
 
-@media (max-width: 575px) {
-    .wrapper {
-        left: 42%;
-    }
-}
-
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     .overlay {
@@ -92,12 +86,6 @@ textarea, input {
     }
     .nexttoright p {
         font-size: 4vw;
-    }
-    .wrapper {
-        left: 45%;
-    }
-    .cardGroup {
-        height: 80vh;
     }
 }
 
@@ -117,12 +105,6 @@ textarea, input {
     .nexttoright p {
         font-size: 3vw;
     }
-    .wrapper {
-        left: 43.5%;
-    }
-    .cardGroup {
-        height: auto !important;
-    }
 }
 
 /* Large devices (desktops, 992px and up)*/
@@ -141,12 +123,6 @@ textarea, input {
     .nexttoright p {
         font-size: 1.6vw;
     }
-    .wrapper {
-        left: 47%;
-    }
-    .cardGroup {
-        height: auto !important;
-    }
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
@@ -164,12 +140,6 @@ textarea, input {
     }
     .nexttoright p {
         font-size: 1.5vw;
-    }
-    .wrapper {
-        left: 48.5%;
-    }
-    .cardGroup {
-        height: auto !important;
     }
 }
 
@@ -203,17 +173,8 @@ textarea, input {
 
 .bottom {
     background-color: lavenderblush;
-    margin: 0 -500%;
-    padding: 0 500%;
-    width: 100%;
-    margin-top: -1px;
 }
 
-.bottom2 {
-    margin: 0 -500%;
-    padding: 0 500%;
-    width: 100%;
-}
 
 .backgroundL2 {
     background-color: lightsteelblue;
@@ -225,7 +186,7 @@ textarea, input {
 
 .backgroundL3 {
     background-color: lightsteelblue;
-    margin: 0 -500%;
+    margin: 0 -500% !important;
     padding: 0 500%;
     height: auto;
 }
@@ -249,7 +210,6 @@ textarea, input {
 }
 
 .wrapper {
-    transform: translate(10%, 0);
     min-width: 80vw;
     height: inherit;
     background-color: lightsteelblue;
@@ -341,9 +301,18 @@ textarea, input {
     outline: none;
 }
 
-.cardGroup {
-    padding-top: 1em;
-    padding-bottom: 1em;
-    overflow: auto;
-    height: 90vh;
+.card {
+    margin: 0;
+}
+
+#cardcol .col, #cardcol .col-1, #cardcol .col-10, #cardcol .col-11, #cardcol .col-12, #cardcol .col-2, #cardcol .col-3, #cardcol .col-4, #cardcol .col-5,
+#cardcol .col-6, #cardcol .col-7, #cardcol .col-8, #cardcol .col-9, #cardcol .col-auto, #cardcol .col-lg, #cardcol .col-lg-1, #cardcol .col-lg-10,
+#cardcol .col-lg-11, #cardcol .col-lg-12, #cardcol .col-lg-2, #cardcol .col-lg-3, #cardcol .col-lg-4, #cardcol .col-lg-5, #cardcol .col-lg-6, #cardcol .col-lg-7,
+#cardcol .col-lg-8, #cardcol .col-lg-9, #cardcol .col-lg-auto, #cardcol .col-md, #cardcol .col-md-1, #cardcol .col-md-10, #cardcol .col-md-11, #cardcol .col-md-12,
+#cardcol .col-md-2, #cardcol .col-md-3, #cardcol .col-md-4, #cardcol .col-md-5, #cardcol .col-md-6, #cardcol .col-md-7, #cardcol .col-md-8, #cardcol .col-md-9,
+#cardcol .col-md-auto, #cardcol .col-sm, #cardcol .col-sm-1, #cardcol .col-sm-10, #cardcol .col-sm-11, #cardcol .col-sm-12, #cardcol .col-sm-2, #cardcol .col-sm-3,
+#cardcol .col-sm-4, #cardcol .col-sm-5, #cardcol .col-sm-6, #cardcol .col-sm-7, #cardcol .col-sm-8, #cardcol .col-sm-9, #cardcol .col-sm-auto, #cardcol .col-xl,
+#cardcol .col-xl-1, #cardcol .col-xl-10, #cardcol .col-xl-11, #cardcol .col-xl-12, #cardcol .col-xl-2, #cardcol .col-xl-3, #cardcol .col-xl-4, #cardcol .col-xl-5,
+#cardcol .col-xl-6, #cardcol .col-xl-7, #cardcol .col-xl-8, #cardcol .col-xl-9, #cardcol .col-xl-auto {
+    padding: 0.4em !important;
 }
