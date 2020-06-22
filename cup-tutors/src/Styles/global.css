@@ -9,49 +9,31 @@ html {
     overflow-x: hidden;
 }
 
-.this-body {
+.home-body {
     font-family: 'Montserrat', sans-serif;
     position: relative;
 }
 
 #home-page {
-    background: url("https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
-    z-index: -1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-position: center, center;
-    height: 100%;
-    width: 100%;
+    background: url("https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-repeat: no-repeat;
+    height: 100%;
+    overflow: hidden;
 }
 
 
 
 #meet-tutors-page {
-    background: url("https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
-    z-index: -1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-position: center, center;
-    height: 100%;
-    width: 100%;
+    background: url("https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-repeat: no-repeat;
-}
-
-
-
-@media only screen and (min-device-width : 300px) and (max-device-width : 765px) {
-    #home-page {
-        background-attachment: initial;
-    }
-
-    #meet-tutors-page {
-        background-attachment: initial;
-    }
+    height: 100%;
+    overflow: hidden;
 }
 
 textarea, input {
@@ -74,6 +56,7 @@ textarea, input {
     z-index: 2;
     color: black;
     margin: 30vh 0;
+    padding: 1vw;
 }
 #p1 {
     font-size: 12vw;
@@ -96,8 +79,7 @@ textarea, input {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     .overlay {
-        padding-top: 3vw;
-        padding-bottom: 3vw;
+        padding: 3vw;
     }
     #p1 {
         font-size: 8vw;
@@ -113,8 +95,7 @@ textarea, input {
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 667px) {
     .overlay {
-        padding-top: 3vw;
-        padding-bottom: 3vw;
+        padding: 3vw 8vw;
     }
     #p1 {
         font-size: 8vw;
@@ -131,8 +112,7 @@ textarea, input {
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
     .overlay {
-        padding-top: 2vw;
-        padding-bottom: 2vw;
+        padding-top: 4vw 8vw;
     }
     #p1 {
         font-size: 6.5vw;
@@ -149,8 +129,7 @@ textarea, input {
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
     .overlay {
-        padding-top: 0.5vw;
-        padding-bottom: 0.5vw;
+        padding: 0.5vw 10vw;
     }
     #p1 {
         font-size: 7vw;
