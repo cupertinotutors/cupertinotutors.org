@@ -47,7 +47,8 @@ export default function Home() {
 
 
     return (
-        <Container fluid id="meet-tutors-page">
+        <Container fluid>
+            <div id="meet-tutors-page"></div>
             <Helmet>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, 
                 height=device-height, target-densitydpi=device-dpi, shrink-to-fit=no, user-scalable=no" />
@@ -84,7 +85,7 @@ export default function Home() {
                         <Image src="https://images.unsplash.com/photo-1585432959315-d9342fd58eb6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" style={{ padding: `3vw` }} roundedCircle fluid />
                     </div>
                 </Col>
-                <Col className="d-flex align-items-center justify-content-center" xs={12} sm={12} md={12} lg={6} xl={6} style={{ padding: 0 }}>
+                <Col className="d-flex align-items-center justify-content-center" xs={12} sm={12} md={12} lg={6} xl={6} style={{ paddingTop: 0, paddingLeft: 0, paddingRight: 0, paddingBottom: `1em` }}>
                     <div className="nexttoright">
                         <h3 style={{ textAlign: `center`, fontWeight: `bold` }}>Our Services</h3>
                         <p style={{ textAlign: `left` }}>Cupertino Tutors offers Title 1 students tutoring free of charge.
@@ -95,9 +96,8 @@ export default function Home() {
                 </Col>
             </Row>
 
-            <Row className="backgroundG" style={{ height: `1em` }}></Row>
-            <Row className="backgroundL" style={{ height: `1em` }}></Row>
-            <Row className="backgroundL" id="cardcol" style={{ marginBottom: 0, marginTop: 0 }}>
+
+            <Row className="backgroundL" id="cardcol" style={{ marginBottom: 0, marginTop: 0, paddingTop: `1em`, paddingBottom: `1em` }}>
                 <Col xs={{ span: 12, order: order[0] }} sm={{ span: 6, order: order[0] }} md={{ span: 4, order: order[0] }} lg={{ span: 4, order: order[0] }} xl={{ span: 4, order: order[0] }}>
                     <Card>
                         <Card.Img variant="top" src="https://cdn.pixabay.com/photo/2017/02/23/13/05/profile-2092113_960_720.png" />
@@ -224,7 +224,6 @@ export default function Home() {
 
 
 
-            <Row className="backgroundL" style={{ height: `1em` }}></Row>
             <Row className="bottom" id="tohere" >
                 <Col className="d-flex align-items-center justify-content-center">
                     <form autoComplete="off">

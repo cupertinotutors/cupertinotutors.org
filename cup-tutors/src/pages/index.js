@@ -21,7 +21,8 @@ export default function Home() {
     }
 
     return (
-        <Container fluid id="home-page">
+        <Container fluid>
+            <div id="home-page"></div>
             <Helmet>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, 
                 height=device-height, target-densitydpi=device-dpi, shrink-to-fit=no, user-scalable=no" />
@@ -71,7 +72,7 @@ export default function Home() {
                 </Col>
             </Row>
 
-            <Row className="backgroundL">
+            <Row className="backgroundL" style={{ paddingBottom: `1em` }}>
                 <Col className="d-flex align-items-center justify-content-center" xs={{ span: 12, order: `last` }} sm={{ span: 12, order: `last` }} md={{ span: 12, order: `last` }} lg={{ span: 6, order: `first` }} xl={{ span: 6, order: `first` }} style={{ padding: 0 }}>
                     <div className="nexttoright">
                         <h3 style={{ textAlign: `center`, fontWeight: `bold` }}>Our Tutors</h3>
@@ -87,7 +88,6 @@ export default function Home() {
                 </Col>
             </Row>
 
-            <Row className="backgroundL" style={{ height: `1em`, }}></Row>
             <Row className="bottom" id="tohere" >
                 <Col className="d-flex align-items-center justify-content-center">
                     <form autoComplete="off">

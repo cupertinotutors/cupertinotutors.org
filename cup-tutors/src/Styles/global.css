@@ -16,31 +16,30 @@ html {
 
 #home-page {
     background: url("https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
-    height: auto;
-    background-size: cover;
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
     background-position: center, center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-attachment: fixed;
-    width: 100vw;
-    height: 100vh;
-    
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
 
 #meet-tutors-page {
     background: url("https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
-    height: auto;
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-position: center, center;
+    height: 100%;
+    width: 100%;
     background-size: cover;
-    background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-attachment: fixed;
-    width: 100vw;
-    height: 100vh;
+    background-repeat: no-repeat;
 }
 
 
