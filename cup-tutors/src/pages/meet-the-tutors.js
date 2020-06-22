@@ -47,11 +47,11 @@ export default function Home() {
 
 
     return (
-        <Container fluid id="meet-tutors-page">
+        <Container fluid>
             <Helmet>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, 
                 height=device-height, target-densitydpi=device-dpi, shrink-to-fit=no, user-scalable=no" />
-                <body className="this-body" />
+                <body id="meet-tutors-body" />
             </Helmet>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
                 <Navbar.Brand href="/">Cupertino Tutors</Navbar.Brand>
