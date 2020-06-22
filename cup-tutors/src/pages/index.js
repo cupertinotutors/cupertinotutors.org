@@ -23,7 +23,8 @@ export default function Home() {
     return (
         <Container fluid id="home-page">
             <Helmet>
-                <meta name="viewport" content="width=device-width, initial-scale = 1, shrink-to-fit=no, user-scalable=no" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, 
+                height=device-height, target-densitydpi=device-dpi, shrink-to-fit=no, user-scalable=no" />
                 <body className="this-body" />
             </Helmet>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
@@ -40,7 +41,7 @@ export default function Home() {
             </Navbar>
 
             <Row>
-                <Col xs={{ span: 12 }} sm={{ span: 12 }} md={{ span: 8, offset: 2 }} lg={{ span: 8, offset: 2 }} xl={{ span: 8, offset: 2}}>
+                <Col xs={12} sm={12} md={12} lg={12} xl={12} style={{ padding: `5vw 0` }}>
                     <div className="overlay">
                         <p id="p1">Cupertino Tutors</p>
                         <p id="p2">Local Tutors</p>
@@ -49,7 +50,6 @@ export default function Home() {
                     </div>
                 </Col>
             </Row>
-            <div style={{ marginTop: `30vh` }}></div>
 
             <Row className="backgroundG">
                 <Col xs={12} sm={12} md={12} lg={6} xl={6} style={{ padding: 0 }}>
@@ -87,7 +87,7 @@ export default function Home() {
                 </Col>
             </Row>
 
-            <Row className="backgroundL2" style={{ height: `1em` }}></Row>
+            <Row className="backgroundL" style={{ height: `1em`, }}></Row>
             <Row className="bottom" id="tohere" >
                 <Col className="d-flex align-items-center justify-content-center">
                     <form autoComplete="off">
