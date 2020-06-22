@@ -68,7 +68,7 @@ export default function Home() {
 
 
             <Row>
-                <Col xs={12} sm={12} md={12} lg={12} xl={12} style={{ padding: `5vw 0` }}>
+                <Col xs={12} sm={12} md={12} lg={12} xl={12} style={{ padding: 0 }}>
                     <div className="overlay">
                         <p id="p1">Cupertino Tutors</p>
                         <p id="p2">Our Tutors</p>
