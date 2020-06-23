@@ -57,11 +57,14 @@ export default function Home() {
                             order[j] = temp;
                         }
                         
-                        for (var l = 1; l <= max; ++l){
-                            var cardNum = l.toString();
-                            var orderNum = l-1;
-                            document.getElementById('card'+cardNum).style.order = order[orderNum];
-                        }
+                        document.getElementById('card1').style.order = order[0];
+                        document.getElementById('card2').style.order = order[1];
+                        document.getElementById('card3').style.order = order[2];
+                        document.getElementById('card4').style.order = order[3];
+                        document.getElementById('card5').style.order = order[4];
+                        document.getElementById('card6').style.order = order[5];
+
+                        
                 `}</script>
             </Helmet>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
