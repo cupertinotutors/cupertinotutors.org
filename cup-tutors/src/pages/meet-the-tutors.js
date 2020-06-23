@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ReactDOM from 'react-dom';
 
 import { Container } from 'react-bootstrap';
 import { Link } from "gatsby";
@@ -13,34 +12,35 @@ import { Row, Col, Button, Card, CardColumns, CardDeck, CardGroup } from "react-
 
 export default function Home() {
 
-    function load () {
+        useEffect(() => {
+            var order = new Array();
+            const max = 6;
 
-        var order = new Array();
-        const max = 6;
 
+            for (var i = 1; i <= max; ++i) {
+                order.push(i);
+            }
 
-        for (var i = 1; i <= max; ++i) {
-            order.push(i);
-        }
+            var p = order.length;
+            var j = 0;
 
-        var p = order.length;
-        var j = 0;
+            while (p--) {
+                j = Math.floor(Math.random() * (p + 1));
 
-        while (p--) {
-            j = Math.floor(Math.random() * (p + 1));
+                var temp = order[p];
+                order[p] = order[j];
+                order[j] = temp;
+            }
 
-            var temp = order[p];
-            order[p] = order[j];
-            order[j] = temp;
-        }
+            document.getElementById('card1').style.order = order[0];
+            document.getElementById('card2').style.order = order[1];
+            document.getElementById('card3').style.order = order[2];
+            document.getElementById('card4').style.order = order[3];
+            document.getElementById('card5').style.order = order[4];
+            document.getElementById('card6').style.order = order[5];
+        }, []);
 
-        document.getElementById('card1').style.order = order[0];
-        document.getElementById('card2').style.order = order[1];
-        document.getElementById('card3').style.order = order[2];
-        document.getElementById('card4').style.order = order[3];
-        document.getElementById('card5').style.order = order[4];
-        document.getElementById('card6').style.order = order[5];
-    }
+            
 
 
     function sendmail() {
@@ -50,13 +50,15 @@ export default function Home() {
         var inputmessage = input2.value;
 
         window.location.href = "mailto:jason@cupertinotutors.org" + "?subject=" + inputsubject + "&body=" + inputmessage + '%0D%0A' + '%20';
+
+        return null;
     }
 
 
 
 
     return (
-        <Container fluid onLoad={load}>
+        <Container fluid>
             <Helmet>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, 
                 height=device-height, target-densitydpi=device-dpi, shrink-to-fit=no, user-scalable=no" />
@@ -233,11 +235,7 @@ export default function Home() {
 
 
 
-
-
-
-
-            <Row className="bottom" id="tohere" >
+            <Row className="bottom" id="tohere">
                 <Col className="d-flex align-items-center justify-content-center">
                     <form autoComplete="off">
                         <div style={{ paddingTop: `1em`, paddingBottom: `1em` }}>
@@ -261,6 +259,8 @@ export default function Home() {
                     </form>
                 </Col>
             </Row>
+
+
         </Container>
     )
 }
