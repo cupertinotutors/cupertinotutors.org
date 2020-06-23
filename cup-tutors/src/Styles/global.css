@@ -36,6 +36,7 @@ html {
 }
 
 
+
 textarea, input {
     font-family: 'PlayFair Display', serif;
     font-size: 1rem;
@@ -334,3 +335,4 @@ textarea, input {
 .red {
     color: red;
 }
+

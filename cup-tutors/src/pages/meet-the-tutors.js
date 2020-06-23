@@ -1,5 +1,6 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ReactDOM from 'react-dom';
 
 import { Container } from 'react-bootstrap';
 import { Link } from "gatsby";
@@ -12,11 +13,34 @@ import { Row, Col, Button, Card, CardColumns, CardDeck, CardGroup } from "react-
 
 export default function Home() {
 
+    function load () {
 
-    
+        var order = new Array();
+        const max = 6;
 
 
+        for (var i = 1; i <= max; ++i) {
+            order.push(i);
+        }
 
+        var p = order.length;
+        var j = 0;
+
+        while (p--) {
+            j = Math.floor(Math.random() * (p + 1));
+
+            var temp = order[p];
+            order[p] = order[j];
+            order[j] = temp;
+        }
+
+        document.getElementById('card1').style.order = order[0];
+        document.getElementById('card2').style.order = order[1];
+        document.getElementById('card3').style.order = order[2];
+        document.getElementById('card4').style.order = order[3];
+        document.getElementById('card5').style.order = order[4];
+        document.getElementById('card6').style.order = order[5];
+    }
 
 
     function sendmail() {
@@ -32,12 +56,13 @@ export default function Home() {
 
 
     return (
-        <Container fluid>
+        <Container fluid onLoad={load}>
             <Helmet>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, 
                 height=device-height, target-densitydpi=device-dpi, shrink-to-fit=no, user-scalable=no" />
-                <body id="meet-tutors-page" />
+                <body id="meet-tutors-page"/>
             </Helmet>
+
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
                 <Navbar.Brand href="/">Cupertino Tutors</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -50,6 +75,7 @@ export default function Home() {
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
+
 
             <div id="meet-tutors-body">
             <Row>
@@ -209,6 +235,8 @@ export default function Home() {
 
 
 
+
+
             <Row className="bottom" id="tohere" >
                 <Col className="d-flex align-items-center justify-content-center">
                     <form autoComplete="off">
@@ -233,34 +261,6 @@ export default function Home() {
                     </form>
                 </Col>
             </Row>
-            <script>{`
-                        var order = new Array();
-                        const max = 6;
-
-
-                        for (var i = 1; i <= max; ++i) {
-                            order.push(i);
-                        }
-
-                        var p = order.length;
-                        var j = 0;
-
-                        while(p--) {
-                            j = Math.floor(Math.random() * (p + 1));
-
-                            var temp = order[p];
-                            order[p] = order[j];
-                            order[j] = temp;
-                        }
-                        document.getElementById('card1').style.order = order[0];
-                        document.getElementById('card2').style.order = order[1];
-                        document.getElementById('card3').style.order = order[2];
-                        document.getElementById('card4').style.order = order[3];
-                        document.getElementById('card5').style.order = order[4];
-                        document.getElementById('card6').style.order = order[5];
-
-                        
-                `}</script>
         </Container>
     )
 }
