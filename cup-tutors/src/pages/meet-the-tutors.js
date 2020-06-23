@@ -37,34 +37,6 @@ export default function Home() {
                 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, 
                 height=device-height, target-densitydpi=device-dpi, shrink-to-fit=no, user-scalable=no" />
                 <body id="meet-tutors-page" />
-                <script>{`
-                        var order = new Array();
-                        const max = 6;
-
-
-                        for (var i = 1; i <= max; ++i) {
-                            order.push(i);
-                        }
-
-                        var p = order.length;
-                        var j = 0;
-
-                        while(p--) {
-                            j = Math.floor(Math.random() * (p + 1));
-
-                            var temp = order[p];
-                            order[p] = order[j];
-                            order[j] = temp;
-                        }
-                        document.getElementById('card1').style.order = order[0];
-                        document.getElementById('card2').style.order = order[1];
-                        document.getElementById('card3').style.order = order[2];
-                        document.getElementById('card4').style.order = order[3];
-                        document.getElementById('card5').style.order = order[4];
-                        document.getElementById('card6').style.order = order[5];
-
-                        
-                `}</script>
             </Helmet>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
                 <Navbar.Brand href="/">Cupertino Tutors</Navbar.Brand>
@@ -261,6 +233,34 @@ export default function Home() {
                     </form>
                 </Col>
             </Row>
+            <script>{`
+                        var order = new Array();
+                        const max = 6;
+
+
+                        for (var i = 1; i <= max; ++i) {
+                            order.push(i);
+                        }
+
+                        var p = order.length;
+                        var j = 0;
+
+                        while(p--) {
+                            j = Math.floor(Math.random() * (p + 1));
+
+                            var temp = order[p];
+                            order[p] = order[j];
+                            order[j] = temp;
+                        }
+                        document.getElementById('card1').style.order = order[0];
+                        document.getElementById('card2').style.order = order[1];
+                        document.getElementById('card3').style.order = order[2];
+                        document.getElementById('card4').style.order = order[3];
+                        document.getElementById('card5').style.order = order[4];
+                        document.getElementById('card6').style.order = order[5];
+
+                        
+                `}</script>
         </Container>
     )
 }
