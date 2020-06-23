@@ -25,7 +25,7 @@ export default function Home() {
             <Helmet>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, 
                 height=device-height, target-densitydpi=device-dpi, shrink-to-fit=no, user-scalable=no" />
-                <body id="home-body" />
+                <body id="home-page" />
             </Helmet>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
                 <Navbar.Brand href="/">Cupertino Tutors</Navbar.Brand>
@@ -40,6 +40,8 @@ export default function Home() {
                 </Navbar.Collapse>
             </Navbar>
 
+
+            <div id="home-body">
             <Row>
                 <Col xs={12} sm={12} md={12} lg={12} xl={12} style={{ padding: 0 }}>
                     <div className="overlay">
@@ -50,6 +52,7 @@ export default function Home() {
                     </div>
                 </Col>
             </Row>
+            </div>
 
             <Row className="backgroundG">
                 <Col xs={12} sm={12} md={12} lg={6} xl={6} style={{ padding: 0 }}>
