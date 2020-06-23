@@ -329,3 +329,8 @@ textarea, input {
 #cardcol .col-xl-6, #cardcol .col-xl-7, #cardcol .col-xl-8, #cardcol .col-xl-9, #cardcol .col-xl-auto {
     padding: 0.4em !important;
 }
+
+
+.red {
+    color: red;
+}

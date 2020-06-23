@@ -13,30 +13,8 @@ import { Row, Col, Button, Card, CardColumns, CardDeck, CardGroup } from "react-
 export default function Home() {
 
 
-    function randomize(order) {
-        var order = new Array();
-        const max = 6;
+    
 
-        for (var i = 1; i <= max; ++i) {
-            order.push(i);
-        }
-
-        var p = order.length;
-        var j = 0;
-
-        while (p--) {
-            j = Math.floor(Math.random() * (p + 1));
-
-            var temp = order[p];
-            order[p] = order[j];
-            order[j] = temp;
-        }
-
-        return order;
-    }
-
-    var order = new Array();
-    order = randomize();
 
 
 
@@ -58,7 +36,33 @@ export default function Home() {
             <Helmet>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, 
                 height=device-height, target-densitydpi=device-dpi, shrink-to-fit=no, user-scalable=no" />
-                <body id="meet-tutors-page" onLoad={randomize} />
+                <body id="meet-tutors-page" />
+                <script>{`
+                        var order = new Array();
+                        const max = 6;
+
+
+                        for (var i = 1; i <= max; ++i) {
+                            order.push(i);
+                        }
+
+                        var p = order.length;
+                        var j = 0;
+
+                        while(p--) {
+                            j = Math.floor(Math.random() * (p + 1));
+
+                            var temp = order[p];
+                            order[p] = order[j];
+                            order[j] = temp;
+                        }
+                        
+                        for (var l = 1; l <= max; ++l){
+                            var cardNum = l.toString();
+                            var orderNum = l-1;
+                            document.getElementById('card'+cardNum).style.order = order[orderNum];
+                        }
+                `}</script>
             </Helmet>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
                 <Navbar.Brand href="/">Cupertino Tutors</Navbar.Brand>
@@ -105,7 +109,7 @@ export default function Home() {
 
 
             <Row className="backgroundL" id="cardcol" style={{ marginBottom: 0, marginTop: 0, paddingTop: `1em`, paddingBottom: `1em` }}>
-                <Col xs={{ span: 12, order: order[0] }} sm={{ span: 6, order: order[0] }} md={{ span: 4, order: order[0] }} lg={{ span: 4, order: order[0] }} xl={{ span: 4, order: order[0] }}>
+                <Col id="card1" xs={12} sm={6} md={4} lg={4} xl={4}>
                     <Card>
                         <Card.Img variant="top" src="https://cdn.pixabay.com/photo/2017/02/23/13/05/profile-2092113_960_720.png" />
                         <Card.Body>
@@ -125,7 +129,7 @@ export default function Home() {
                         </blockquote>
                     </Card>
                 </Col>
-                <Col xs={{ span: 12, order: order[1] }} sm={{ span: 6, order: order[1] }} md={{ span: 4, order: order[1] }} lg={{ span: 4, order: order[1] }} xl={{ span: 4, order: order[1] }}>
+                <Col id="card2" xs={12} sm={6} md={4} lg={4} xl={4}>
                     <Card>
                         <Card.Img variant="top" src="https://cdn.pixabay.com/photo/2017/02/23/13/05/profile-2092113_960_720.png" />
                         <Card.Body>
@@ -145,7 +149,7 @@ export default function Home() {
                         </blockquote>
                     </Card>
                 </Col>
-                <Col xs={{ span: 12, order: order[2] }} sm={{ span: 6, order: order[2] }} md={{ span: 4, order: order[2] }} lg={{ span: 4, order: order[2] }} xl={{ span: 4, order: order[2] }}>
+                <Col id="card3" xs={12} sm={6} md={4} lg={4} xl={4}>
                     <Card>
                         <Card.Img variant="top" src="https://cdn.pixabay.com/photo/2017/02/23/13/05/profile-2092113_960_720.png" />
                         <Card.Body>
@@ -165,7 +169,7 @@ export default function Home() {
                         </blockquote>
                     </Card>
                 </Col>
-                <Col xs={{ span: 12, order: order[3] }} sm={{ span: 6, order: order[3] }} md={{ span: 4, order: order[3] }} lg={{ span: 4, order: order[3] }} xl={{ span: 4, order: order[3] }}>
+                <Col id="card4" xs={12} sm={6} md={4} lg={4} xl={4}>
                     <Card>
                         <Card.Img variant="top" src="https://cdn.pixabay.com/photo/2017/02/23/13/05/profile-2092113_960_720.png" />
                         <Card.Body>
@@ -185,7 +189,7 @@ export default function Home() {
                         </blockquote>
                     </Card>
                 </Col>
-                <Col xs={{ span: 12, order: order[4] }} sm={{ span: 6, order: order[4] }} md={{ span: 4, order: order[4] }} lg={{ span: 4, order: order[4] }} xl={{ span: 4, order: order[4] }}>
+                <Col id="card5" xs={12} sm={6} md={4} lg={4} xl={4}>
                     <Card>
                         <Card.Img variant="top" src="https://cdn.pixabay.com/photo/2017/02/23/13/05/profile-2092113_960_720.png" />
                         <Card.Body>
@@ -205,7 +209,7 @@ export default function Home() {
                         </blockquote>
                     </Card>
                 </Col>
-                <Col xs={{ span: 12, order: order[5] }} sm={{ span: 6, order: order[5] }} md={{ span: 4, order: order[5] }} lg={{ span: 4, order: order[5] }} xl={{ span: 4, order: order[5] }}>
+                <Col id="card6" xs={12} sm={6} md={4} lg={4} xl={4}>
                     <Card>
                         <Card.Img variant="top" src="https://cdn.pixabay.com/photo/2017/02/23/13/05/profile-2092113_960_720.png" />
                         <Card.Body>
