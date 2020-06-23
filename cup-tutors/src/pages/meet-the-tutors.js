@@ -56,7 +56,6 @@ export default function Home() {
                             order[p] = order[j];
                             order[j] = temp;
                         }
-                        
                         document.getElementById('card1').style.order = order[0];
                         document.getElementById('card2').style.order = order[1];
                         document.getElementById('card3').style.order = order[2];
