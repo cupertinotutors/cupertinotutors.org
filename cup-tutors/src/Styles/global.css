@@ -107,12 +107,6 @@ textarea, input {
     .nexttoright p {
         font-size: 3vw;
     }
-    #home-body {
-        background-attachment: fixed;
-    }
-    #meet-tutors-body {
-        background-attachment: fixed;
-    }
 }
 
 /* Large devices (desktops, 992px and up)*/

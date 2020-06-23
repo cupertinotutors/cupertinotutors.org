@@ -13,23 +13,30 @@ import { Row, Col, Button, Card, CardColumns, CardDeck, CardGroup } from "react-
 export default function Home() {
 
 
-        const order = new Array();
+    function randomize(order) {
+        var order = new Array();
         const max = 6;
 
         for (var i = 1; i <= max; ++i) {
             order.push(i);
         }
 
-        let p = order.length;
-        let j = 0;
+        var p = order.length;
+        var j = 0;
 
         while (p--) {
             j = Math.floor(Math.random() * (p + 1));
 
-            let temp = order[p];
+            var temp = order[p];
             order[p] = order[j];
             order[j] = temp;
         }
+
+        return order;
+    }
+
+    var order = new Array();
+    order = randomize();
 
 
 
@@ -51,7 +58,7 @@ export default function Home() {
             <Helmet>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, 
                 height=device-height, target-densitydpi=device-dpi, shrink-to-fit=no, user-scalable=no" />
-                <body id="meet-tutors-page" />
+                <body id="meet-tutors-page" onLoad={randomize} />
             </Helmet>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
                 <Navbar.Brand href="/">Cupertino Tutors</Navbar.Brand>
