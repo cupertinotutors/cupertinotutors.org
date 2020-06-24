@@ -1,6 +1,10 @@
 import React, { useEffect } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import Jason from "../../static/JasonPhoto.jpg";
+import Avatar from "../../static/default_avatar.webp";
+import Services from "../../static/Services.jpg";
+
 import { Container } from 'react-bootstrap';
 import { Link } from "gatsby";
 import { Helmet } from "react-helmet";
@@ -95,7 +99,7 @@ export default function Home() {
             <Row className="backgroundG">
                 <Col xs={12} sm={12} md={12} lg={6} xl={6} style={{ padding: 0 }}>
                     <div className="imgdiv">
-                        <Image src="https://images.unsplash.com/photo-1585432959315-d9342fd58eb6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" style={{ padding: `3vw` }} roundedCircle fluid />
+                        <Image src={Services} style={{ padding: `3vw` }} roundedCircle fluid />
                     </div>
                 </Col>
                 <Col className="d-flex align-items-center justify-content-center" xs={12} sm={12} md={12} lg={6} xl={6} style={{ paddingTop: 0, paddingLeft: 0, paddingRight: 0, paddingBottom: `1em` }}>
@@ -113,19 +117,20 @@ export default function Home() {
             <Row className="backgroundL" id="cardcol" style={{ marginBottom: 0, marginTop: 0, paddingTop: `1em`, paddingBottom: `1em` }}>
                 <Col id="card1" xs={12} sm={6} md={4} lg={4} xl={4}>
                     <Card>
-                        <Card.Img variant="top" src="https://cdn.pixabay.com/photo/2017/02/23/13/05/profile-2092113_960_720.png" />
+                        <Card.Img variant="top" src={Jason} alt="" />
                         <Card.Body>
-                            <Card.Title>ONE</Card.Title>
+                            <Card.Title>Jason Shan</Card.Title>
                             <Card.Text>
-                                Small blurb or description of self/autobiography (e.g. age, hobbies, etc.)
+                                Jason is a rising Sophomore at Lynbrook High School. Outside of school, he likes to participate in community service activities and different community organizations.
+                                Jason loves to constantly learn, and some favorite pastimes include reading, writing, and programming.
                                 <br /> <br />
-                                $15/hr
+                                $13/hr
                             </Card.Text>
                         </Card.Body>
                         <blockquote className="blockquote mb-0 card-body">
                             <footer className="blockquote-footer">
                                 <small className="text-muted">
-                                    Subjects: Science and Math
+                                    Subjects: Biology and Math
                                 </small>
                             </footer>
                         </blockquote>
@@ -133,19 +138,19 @@ export default function Home() {
                 </Col>
                 <Col id="card2" xs={12} sm={6} md={4} lg={4} xl={4}>
                     <Card>
-                        <Card.Img variant="top" src="https://cdn.pixabay.com/photo/2017/02/23/13/05/profile-2092113_960_720.png" />
+                        <Card.Img variant="top" src={Avatar} alt="" />
                         <Card.Body>
                             <Card.Title>TWO</Card.Title>
                             <Card.Text>
                                 Small blurb or description of self/autobiography (e.g. age, hobbies, etc.)
-                                <br /> <br />
-                                $15/hr
+                                <br /> <br /> <br /> <br /> <br /> <br />
+                                Price/hr
                             </Card.Text>
                         </Card.Body>
                         <blockquote className="blockquote mb-0 card-body">
                             <footer className="blockquote-footer">
                                 <small className="text-muted">
-                                    Subjects: Science and Math
+                                    Subjects: Subjects to teach
                                 </small>
                             </footer>
                         </blockquote>
@@ -153,19 +158,19 @@ export default function Home() {
                 </Col>
                 <Col id="card3" xs={12} sm={6} md={4} lg={4} xl={4}>
                     <Card>
-                        <Card.Img variant="top" src="https://cdn.pixabay.com/photo/2017/02/23/13/05/profile-2092113_960_720.png" />
+                        <Card.Img variant="top" src={Avatar} alt="" />
                         <Card.Body>
                             <Card.Title>THREE</Card.Title>
                             <Card.Text>
                                 Small blurb or description of self/autobiography (e.g. age, hobbies, etc.)
-                                <br /> <br />
-                                $15/hr
+                                <br /> <br /> <br /> <br /> <br /> <br />
+                                Price/hr
                             </Card.Text>
                         </Card.Body>
                         <blockquote className="blockquote mb-0 card-body">
                             <footer className="blockquote-footer">
                                 <small className="text-muted">
-                                    Subjects: Science and Math
+                                    Subjects: Subjects to teach
                                 </small>
                             </footer>
                         </blockquote>
@@ -173,19 +178,19 @@ export default function Home() {
                 </Col>
                 <Col id="card4" xs={12} sm={6} md={4} lg={4} xl={4}>
                     <Card>
-                        <Card.Img variant="top" src="https://cdn.pixabay.com/photo/2017/02/23/13/05/profile-2092113_960_720.png" />
+                        <Card.Img variant="top" src={Avatar} alt="" />
                         <Card.Body>
                             <Card.Title>FOUR</Card.Title>
                             <Card.Text>
                                 Small blurb or description of self/autobiography (e.g. age, hobbies, etc.)
-                                <br /> <br />
-                                $15/hr
+                                <br /> <br /> <br /> <br /> <br /> <br />
+                                Price/hr
                             </Card.Text>
                         </Card.Body>
                         <blockquote className="blockquote mb-0 card-body">
                             <footer className="blockquote-footer">
                                 <small className="text-muted">
-                                    Subjects: Science and Math
+                                    Subjects: Subjects to teach
                                 </small>
                             </footer>
                         </blockquote>
@@ -193,19 +198,19 @@ export default function Home() {
                 </Col>
                 <Col id="card5" xs={12} sm={6} md={4} lg={4} xl={4}>
                     <Card>
-                        <Card.Img variant="top" src="https://cdn.pixabay.com/photo/2017/02/23/13/05/profile-2092113_960_720.png" />
+                        <Card.Img variant="top" src={Avatar} alt="" />
                         <Card.Body>
                             <Card.Title>FIVE</Card.Title>
                             <Card.Text>
                                 Small blurb or description of self/autobiography (e.g. age, hobbies, etc.)
-                                <br /> <br />
-                                $15/hr
+                                <br /> <br /> <br /> <br /> <br /> <br />
+                                Price/hr
                             </Card.Text>
                         </Card.Body>
                         <blockquote className="blockquote mb-0 card-body">
                             <footer className="blockquote-footer">
                                 <small className="text-muted">
-                                    Subjects: Science and Math
+                                    Subjects: Subjects to teach
                                 </small>
                             </footer>
                         </blockquote>
@@ -213,19 +218,19 @@ export default function Home() {
                 </Col>
                 <Col id="card6" xs={12} sm={6} md={4} lg={4} xl={4}>
                     <Card>
-                        <Card.Img variant="top" src="https://cdn.pixabay.com/photo/2017/02/23/13/05/profile-2092113_960_720.png" />
+                        <Card.Img variant="top" src={Avatar} alt="" />
                         <Card.Body>
                             <Card.Title>SIX</Card.Title>
                             <Card.Text>
                                 Small blurb or description of self/autobiography (e.g. age, hobbies, etc.)
-                                <br /> <br />
-                                $15/hr
+                                <br /> <br /> <br /> <br /> <br /> <br />
+                                Price/hr
                             </Card.Text>
                         </Card.Body>
                         <blockquote className="blockquote mb-0 card-body">
                             <footer className="blockquote-footer">
                                 <small className="text-muted">
-                                    Subjects: Science and Math
+                                    Subjects: Subjects to teach
                                 </small>
                             </footer>
                         </blockquote>

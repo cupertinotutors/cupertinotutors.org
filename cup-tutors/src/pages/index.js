@@ -1,6 +1,9 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import About from '../../static/about.webp';
+import Computer from '../../static/computer.jpg'
+
 import { Container } from 'react-bootstrap';
 import { Link } from "gatsby";
 import { Helmet } from "react-helmet";
@@ -57,7 +60,7 @@ export default function Home() {
             <Row className="backgroundG">
                 <Col xs={12} sm={12} md={12} lg={6} xl={6} style={{ padding: 0 }}>
                     <div className="imgdiv">
-                        <Image src="https://cdn.pixabay.com/photo/2015/12/15/06/42/kids-1093758_1280.jpg" style={{ padding: `3vw` }} roundedCircle fluid />
+                        <Image src={About} style={{ padding: `3vw` }} roundedCircle fluid />
                     </div>
                 </Col>
                 <Col className="d-flex align-items-center justify-content-center" xs={12} sm={12} md={12} lg={6} xl={6}style={{ padding: 0 }}>
@@ -86,7 +89,7 @@ export default function Home() {
                     </div>
                 </Col>
                 <Col xs={{ span: 12, order: `first` }} sm={{ span: 12, order: `first` }} md={12} lg={6} xl={6} style={{ padding: 0 }}>
-                    <Image src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" style={{ padding: `3vw` }} alt="" fluid rounded />
+                    <Image src={Computer} style={{ padding: `3vw` }} alt="" fluid rounded />
                 </Col>
             </Row>
 
