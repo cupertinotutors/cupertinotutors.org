@@ -1,13 +1,16 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Shan",
+    "\\Shan\\Documents",
+    "\\Shan\\Documents\\GitHub",
+    "\\Shan\\Documents\\GitHub\\cupertinotutors.org",
+    "\\Shan\\Documents\\GitHub\\cupertinotutors.org\\cup-tutors",
     "\\src",
-    "\\src\\Components",
-    "\\src\\images",
     "\\src\\pages",
     "\\src\\Styles",
     "\\static"
   ],
-  "SelectedNode": "\\src\\pages\\index.js",
+  "SelectedNode": "\\src\\Styles",
   "PreviewInSolutionExplorer": false
 }

@@ -124,7 +124,7 @@ export default function Home() {
                                 Jason is a rising Sophomore at Lynbrook High School. Outside of school, he likes to participate in community service activities and different community organizations.
                                 Jason loves to constantly learn, and some favorite pastimes include reading, writing, and programming.
                                 <br /> <br />
-                                $13/hr
+                                $15/hr
                             </Card.Text>
                         </Card.Body>
                         <blockquote className="blockquote mb-0 card-body">
