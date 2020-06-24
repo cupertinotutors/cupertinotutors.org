@@ -1,7 +1,7 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import About from '../../static/about.webp';
+import About from '../../static/about.png';
 import Computer from '../../static/computer.jpg'
 
 import { Container } from 'react-bootstrap';

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Jason from "../../static/JasonPhoto.jpg";
-import Avatar from "../../static/default_avatar.webp";
+import Avatar from "../../static/default_avatar.png";
 import Services from "../../static/Services.jpg";
 
 import { Container } from 'react-bootstrap';
