@@ -277,7 +277,7 @@ textarea, input {
 }
 
 
-.bottom .btn, .backgroundL .btn {
+.bottom .btn, .backgroundL .btn, .backgroundG .btn {
     text-align: center;
     padding: 15px;
     border: 1px solid dimgray;

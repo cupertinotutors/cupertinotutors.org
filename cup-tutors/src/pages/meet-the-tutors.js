@@ -108,7 +108,7 @@ export default function Home() {
                         <p style={{ textAlign: `left` }}>Cupertino Tutors offers Title 1 students tutoring free of charge.
                         For other students, pricing is dependent on the tutors and the subjects they teach. To request a tutor,
                         please fill out the form below.</p>
-                        <Button className="btn" href="https://forms.gle/qsomHgEG2Tocvcth8" variant="dark" style={{ color: `white` }}>Request a Tutor</Button>{' '}
+                        <Button className="btn" href="https://forms.gle/qsomHgEG2Tocvcth8" rel="noopener noreferrer" target="_blank" variant="dark" style={{ color: `white` }}>Request a Tutor</Button>{' '}
                     </div>
                 </Col>
             </Row>

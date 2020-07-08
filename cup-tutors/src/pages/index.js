@@ -57,7 +57,7 @@ export default function Home() {
             </Row>
             </div>
 
-            <Row className="backgroundG">
+            <Row className="backgroundG" style={{ paddingBottom: `1em` }}>
                 <Col xs={12} sm={12} md={12} lg={6} xl={6} style={{ padding: 0 }}>
                     <div className="imgdiv">
                         <Image src={About} style={{ padding: `3vw` }} roundedCircle fluid />
@@ -67,12 +67,10 @@ export default function Home() {
                     <div className="nexttoright">
                         <h3 style={{ textAlign: `center`, fontWeight: `bold` }}>About Us</h3>
                         <p style={{ textAlign: `left` }}>Cupertino Tutors is comprised of a group of Bay Area high 
-                            school students who are eager to help mentor younger students. 
-                            Each student has their own specialties of subjects to teach. 
-                            Students are also part of the Cupertino Educational Endowment 
-                            Foundation, helping to raise money for the Cupertino Union School 
-                            District. Our goal is to help students to flourish in their 
-                            academic subjects, in a one-on-one learning style.</p>
+                        school students who are eager to help mentor younger students. 
+                        Each student has their own specialties of subjects to teach. 
+                        If you would like to be a tutor, you can request to be one below.</p>
+                        <Button className="btn" href="https://forms.gle/qt5ri6i45Ght444Y6" rel="noopener noreferrer" target="_blank" variant="dark" style={{ color: `white` }}>Be a Tutor</Button>{' '}
                     </div>
                 </Col>
             </Row>
@@ -85,7 +83,7 @@ export default function Home() {
                             each student specializing in their own strong suits. We also offer
                             Title 1 students tutoring at no cost. You can view our full range
                             of tutoring services, as well as all our tutors below.</p>
-                    <Button className="btn" href="/meet-the-tutors" variant="dark" style={{ color: `white` }}>Meet the Tutors</Button>{' '}
+                        <Button className="btn" href="/meet-the-tutors" variant="dark" style={{ color: `white` }}>Meet the Tutors</Button>{' '}
                     </div>
                 </Col>
                 <Col xs={{ span: 12, order: `first` }} sm={{ span: 12, order: `first` }} md={12} lg={6} xl={6} style={{ padding: 0 }}>
