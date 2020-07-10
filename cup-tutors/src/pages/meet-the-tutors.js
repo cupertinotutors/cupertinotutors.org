@@ -66,7 +66,8 @@ export default function Home() {
             <Helmet>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, 
                 height=device-height, target-densitydpi=device-dpi, shrink-to-fit=no, user-scalable=no" />
-                <body id="meet-tutors-page"/>
+                <title>Meet the Tutors - Cupertio Tutors</title>
+                <body id="meet-tutors-page" />
             </Helmet>
 
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
